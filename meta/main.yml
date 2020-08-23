@@ -23,4 +23,4 @@ galaxy_info:
   galaxy_tags: ['biolighthouse', 'bwa']
 
 dependencies:
- - biolighthouse.conda
+ - tannerdowhy.conda
