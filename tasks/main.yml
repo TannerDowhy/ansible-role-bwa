@@ -16,7 +16,7 @@
 #   get_url:
 #     url: "{{ conda_util_file }}"
 #     dest: /tmp/biol/
-- Get util files
+- name: Get util files
   copy:
     src: ../tannerdowhy.ansible_role_conda/files/conda.py
     dest: /tmp/biol/conda.py
