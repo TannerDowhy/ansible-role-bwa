@@ -12,10 +12,14 @@
     state: directory
   notify: Remove biol tmp dir
 
-- name: Get util files
-  get_url:
-    url: "{{ conda_util_file }}"
-    dest: /tmp/biol/
+# - name: Get util files
+#   get_url:
+#     url: "{{ conda_util_file }}"
+#     dest: /tmp/biol/
+- Get util files
+  copy:
+    src: ../tannerdowhy.ansible_role_conda/files/conda.py
+    dest: /tmp/biol/conda.py
 
 - name: Set conda executable variable
   set_fact:
